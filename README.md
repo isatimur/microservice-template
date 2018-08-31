@@ -9,3 +9,5 @@ where to put `microservice.zip` archive with project template:
 ```$xslt
 C:\Users\<username>\.IntelliJIdea2018.2\config\projectTemplates
 ```
+
+![./template.png](./template.png)
