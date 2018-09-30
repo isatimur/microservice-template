@@ -1,2 +1,7 @@
-GET        /        controllers.ExampleController.index
+GET        /                         controllers.ExampleController.index
+GET        /hello                    controllers.ExampleController.hello
 
+
+GET        /docs/                    controllers.Assets.at(path="/public/swagger-ui",file="index.html")
+GET        /docs/swagger.json        controllers.ApiHelpController.getResources
+GET        /docs/*file               controllers.Assets.at(path="/public/swagger-ui",file)

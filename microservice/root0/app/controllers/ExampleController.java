@@ -10,8 +10,14 @@ public class ExampleController extends Controller {
 
     // обязательная заглушка для Docker-а, должна быть привязана к GET / в файле routes
     @ApiOperation(value = "заглушка для docker", hidden = true)
-    public static Result index() {
+    public Result index() {
         return ok();
     }
 
-}
+    // обязательная заглушка для Docker-а, должна быть привязана к GET / в файле routes
+    @ApiOperation(value = "Hello world", hidden = true)
+    public Result hello() {
+        return ok("Hello world!");
+    }
+
+}z
